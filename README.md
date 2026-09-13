@@ -1,7 +1,7 @@
-# ⚡ StormFeed v1.0.0
+# ⚡ StormFeed v1.0.1
 
 [![Rainmeter](https://img.shields.io/badge/Rainmeter-4.5%2B-2563EB?style=for-the-badge&logo=windows&logoColor=white)](https://www.rainmeter.net/)
-[![Version](https://img.shields.io/badge/Version-1.0.0-059669?style=for-the-badge)](https://github.com/Geovanesou/StormFeed/releases)
+[![Version](https://img.shields.io/badge/Version-1.0.1-059669?style=for-the-badge)](https://github.com/Geovanesou/StormFeed/releases)
 [![License](https://img.shields.io/badge/License-CC%20BY--NC--SA%203.0-D97706?style=for-the-badge)](LICENSE)
 [![DeviantArt](https://img.shields.io/badge/DeviantArt-geovanesou-00E59B?style=for-the-badge&logo=deviantart&logoColor=black)](https://www.deviantart.com/geovanesou)
 
@@ -18,9 +18,19 @@ StormFeed takes that vision to the next level—upgrading a gentle "rain" into a
 
 ---
 
-## 🚀 Key Improvements in v1.0.0
+## 🚀 Key Improvements in v1.0.1
 
-| Feature / Issue | Rain Feeder 1.01 Beta | StormFeed 1.0.0 |
+- **Cold-Start Resilience for Large 2x3 (Layout 3):** Explicitly calculates `CalcWidth` and `WindowFeedwidth` upon cold start, and forces unhiding and updating of `Top10Items` and `Next10Items` groups so headlines render immediately without toggling.
+- **Dynamic Variable State Persistence:** Switched layout persistence actions (`MtWinButton1` and feed selectors) to dynamic evaluation syntax `"[#WindowType]"`, resolving the 1-click write-lag issue where the previous layout was saved instead of the new one.
+- **Config Single Source of Truth:** Removed redundant and conflicting `WindowType` definition from `UserVariables.inc`, establishing `StormFeed.ini` as the authoritative source and setting active default layout to WindowType 4.
+- **Dynamic Variable Meter Inheritance:** Added explicit `DynamicVariables=1` and dual group membership (`Top10Items | Feeds`, `Next10Items | Feeds`) to items 1–22, overcoming Rainmeter's lack of `DynamicVariables` inheritance via `MeterStyle`.
+- **Fallback Placeholder Assets:** Added missing `nofeed` placeholder assets for feeds 2 through 8, eliminating log error spam.
+
+---
+
+## 🌟 Evolved from Rain Feeder RSS
+
+| Feature / Issue | Rain Feeder 1.01 Beta | StormFeed |
 | :--- | :--- | :--- |
 | **Active Layout Persistence** | Reverted to Layout 0 whenever a channel button was clicked or skin was refreshed. | **100% Persistent.** Stays on your chosen layout (e.g. Layout 4) across channel switches and restarts. |
 | **Text Geometry (`WindowFeedwidth`)** | Loading Layout 4 directly applied an uninitialized variable, collapsing text width to 0 (invisible headlines). | **Self-contained & resilient.** Text boxes dynamically lock to full width (~480px) on every boot. |
@@ -48,7 +58,7 @@ StormFeed includes **7 built-in layout modes**, toggled seamlessly by clicking t
 ## 📦 Installation
 
 ### Method 1: Automated Package (`.rmskin`) — Recommended
-1. Download the latest `StormFeed_1.0.0.rmskin` from the **[Releases](https://github.com/Geovanesou/StormFeed/releases)** page.
+1. Download the latest `StormFeed_1.0.1.rmskin` from the **[Releases](https://github.com/Geovanesou/StormFeed/releases)** page.
 2. Double-click the file to open the Rainmeter Skin Installer.
 3. Click **Install**. Rainmeter will automatically unpack and activate **StormFeed**.
 
