@@ -8,6 +8,9 @@
 > **A powerful, resilient, and visually refined RSS & Atom news reader suite for Rainmeter.**  
 > Featuring cyclical image galleries, full headline hover tooltips, robust CDATA parsing, and persistent layout management.
 
+[![StormFeed Showcase Demo](assets/stormfeed-showcase.jpg)](https://www.deviantart.com/geovanesou/art/1379803516)
+*Live desktop demonstration featuring StormFeed Layout 4 with synchronized cyclical media preview and full headline hover tooltips.*
+
 ---
 
 ## 📖 Overview
