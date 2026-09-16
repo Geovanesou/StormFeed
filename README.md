@@ -1,12 +1,15 @@
-# ⚡ StormFeed v1.0.1
+# ⚡ StormFeed v1.0.2
 
 [![Rainmeter](https://img.shields.io/badge/Rainmeter-4.5%2B-2563EB?style=for-the-badge&logo=windows&logoColor=white)](https://www.rainmeter.net/)
-[![Version](https://img.shields.io/badge/Version-1.0.1-059669?style=for-the-badge)](https://github.com/Geovanesou/StormFeed/releases)
+[![Version](https://img.shields.io/badge/Version-1.0.2-059669?style=for-the-badge)](https://github.com/Geovanesou/StormFeed/releases)
 [![License](https://img.shields.io/badge/License-CC%20BY--NC--SA%203.0-D97706?style=for-the-badge)](LICENSE)
 [![DeviantArt](https://img.shields.io/badge/DeviantArt-geovanesou-00E59B?style=for-the-badge&logo=deviantart&logoColor=black)](https://www.deviantart.com/geovanesou)
 
 > **A powerful, resilient, and visually refined RSS & Atom news reader suite for Rainmeter.**  
-> Featuring cyclical image galleries, full headline hover tooltips, robust CDATA parsing, and persistent layout management.
+> Featuring cyclical image galleries, unified single-instance tooltips, robust CDATA parsing, and persistent layout management.
+
+[![StormFeed Official Showcase Banner](assets/stormfeed-showcase.jpg)](https://github.com/Geovanesou/StormFeed)
+*StormFeed — Evolving desktop RSS feeds into a high-performance storm of news and visual media.*
 
 ---
 
@@ -18,13 +21,14 @@ StormFeed takes that vision to the next level—upgrading a gentle "rain" into a
 
 ---
 
-## 🚀 Key Improvements in v1.0.1
+## 🚀 Key Improvements in v1.0.2
 
+- **Unified Single-Instance Tooltip Architecture:** Replaced all 22 native Win32 `ToolTipText` declarations with a singular dynamic meter container (`[TipContainer]` + `[TipText]`). Completely eliminates multi-tooltip queuing, stacking ghost artifacts, and Win32 flicker on rapid mouse sweeps.
+- **Brand Identity & High-Performance Fallback Assets:** Integrated the official Rio tempest RSS artwork across all channels (`nofeed.png` and feeds 2–8), calibrated with adaptive palette quantization (~378 KB) for zero I/O latency.
 - **Cold-Start Resilience for Large 2x3 (Layout 3):** Explicitly calculates `CalcWidth` and `WindowFeedwidth` upon cold start, and forces unhiding and updating of `Top10Items` and `Next10Items` groups so headlines render immediately without toggling.
 - **Dynamic Variable State Persistence:** Switched layout persistence actions (`MtWinButton1` and feed selectors) to dynamic evaluation syntax `"[#WindowType]"`, resolving the 1-click write-lag issue where the previous layout was saved instead of the new one.
 - **Config Single Source of Truth:** Removed redundant and conflicting `WindowType` definition from `UserVariables.inc`, establishing `StormFeed.ini` as the authoritative source and setting active default layout to WindowType 4.
 - **Dynamic Variable Meter Inheritance:** Added explicit `DynamicVariables=1` and dual group membership (`Top10Items | Feeds`, `Next10Items | Feeds`) to items 1–22, overcoming Rainmeter's lack of `DynamicVariables` inheritance via `MeterStyle`.
-- **Fallback Placeholder Assets:** Added missing `nofeed` placeholder assets for feeds 2 through 8, eliminating log error spam.
 
 ---
 
