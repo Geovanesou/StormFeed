@@ -1,7 +1,7 @@
-# ⚡ StormFeed v1.0.2
+# ⚡ StormFeed v1.0.3
 
 [![Rainmeter](https://img.shields.io/badge/Rainmeter-4.5%2B-2563EB?style=for-the-badge&logo=windows&logoColor=white)](https://www.rainmeter.net/)
-[![Version](https://img.shields.io/badge/Version-1.0.2-059669?style=for-the-badge)](https://github.com/Geovanesou/StormFeed/releases)
+[![Version](https://img.shields.io/badge/Version-1.0.3-059669?style=for-the-badge)](https://github.com/Geovanesou/StormFeed/releases)
 [![License](https://img.shields.io/badge/License-CC%20BY--NC--SA%203.0-D97706?style=for-the-badge)](LICENSE)
 [![DeviantArt](https://img.shields.io/badge/DeviantArt-geovanesou-00E59B?style=for-the-badge&logo=deviantart&logoColor=black)](https://www.deviantart.com/geovanesou)
 
@@ -18,6 +18,16 @@
 **StormFeed** is an evolved, modernized fork of **Rain Feeder RSS 1.01 Beta** (originally crafted by **NatashaJay** on DeviantArt). While the original concept introduced an inspired visual fusion between news headlines and cyclical image previews, it was hindered by several architectural limitations, channel refresh bugs, and encoding quirks.
 
 StormFeed takes that vision to the next level—upgrading a gentle "rain" into a robust, high-performance "storm" of news and visual media on your desktop.
+
+---
+
+## 🚀 Key Improvements in v1.0.3
+
+- **Unified Storm Brand Identity & Header Ergonomics:** Added stylized `⚡ StormFeed` DirectWrite typography in the header, unified with the visual language of the StormTicker suite.
+- **Symmetric Controls Alignment:** Realigned the Options Menu (`[MtMenuOn]`), Window Layout mode (`[MtWinButton1]`), and Refresh (`[MtRefresh]`) into a clean, horizontal toolbar.
+- **Interactive Portal Navigation:** Clicking the channel favicon badge now directly opens the official website of the active news portal in your default browser with responsive hover feedback and tooltip cues.
+- **Streamlined Architecture:** Deactivated legacy, overlapping drawer elements underneath the site badge to ensure predictable, ghost-free mouse interaction.
+- **Storm Ecosystem Synergy:** Integrated discreet cross-promotion for the new **StormTicker Pro** asynchronous live news ticker suite into the header brand hover and Rainmeter's native context menu.
 
 ---
 
@@ -62,7 +72,7 @@ StormFeed includes **7 built-in layout modes**, toggled seamlessly by clicking t
 ## 📦 Installation
 
 ### Method 1: Automated Package (`.rmskin`) — Recommended
-1. Download the latest `StormFeed_1.0.1.rmskin` from the **[Releases](https://github.com/Geovanesou/StormFeed/releases)** page.
+1. Download the latest `StormFeed_1.0.3.rmskin` from the **[Releases](https://github.com/Geovanesou/StormFeed/releases)** page.
 2. Double-click the file to open the Rainmeter Skin Installer.
 3. Click **Install**. Rainmeter will automatically unpack and activate **StormFeed**.
 
