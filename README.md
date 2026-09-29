@@ -1,7 +1,7 @@
-# ⚡ StormFeed v1.0.3
+# ⚡ StormFeed v1.1.0
 
 [![Rainmeter](https://img.shields.io/badge/Rainmeter-4.5%2B-2563EB?style=for-the-badge&logo=windows&logoColor=white)](https://www.rainmeter.net/)
-[![Version](https://img.shields.io/badge/Version-1.0.3-059669?style=for-the-badge)](https://github.com/Geovanesou/StormFeed/releases)
+[![Version](https://img.shields.io/badge/Version-1.1.0-059669?style=for-the-badge)](https://github.com/Geovanesou/StormFeed/releases)
 [![License](https://img.shields.io/badge/License-CC%20BY--NC--SA%203.0-D97706?style=for-the-badge)](LICENSE)
 [![DeviantArt](https://img.shields.io/badge/DeviantArt-geovanesou-00E59B?style=for-the-badge&logo=deviantart&logoColor=black)](https://www.deviantart.com/geovanesou)
 
@@ -18,6 +18,26 @@
 **StormFeed** is an evolved, modernized fork of **Rain Feeder RSS 1.01 Beta** (originally crafted by **NatashaJay** on DeviantArt). While the original concept introduced an inspired visual fusion between news headlines and cyclical image previews, it was hindered by several architectural limitations, channel refresh bugs, and encoding quirks.
 
 StormFeed takes that vision to the next level—upgrading a gentle "rain" into a robust, high-performance "storm" of news and visual media on your desktop.
+
+---
+
+## 🚀 Key Improvements in v1.1.0
+
+- **Centered Channel Navigation Cluster:** The entire feed-navigation block (previous arrow, 8 channel bullets, feed counter, next arrow) is now dynamically centered via `NavClusterWidth`/`NavStartX` formulas — it stays perfectly centered in every layout mode, including wide and very-wide windows where it previously hugged the left edge.
+- **Fixed Theme Mode (Storm Visual Identity):** Right-click the skin to pick a palette — **Follow Windows (accent)** keeps the classic dynamic accent-tracking behavior, while **Wall Street Dark** and **Dark Green** bring the refined 2026 visual identity shared with StormTicker Pro. The selection is written to `@Resources/ThemeOverride.inc` and persists across refreshes and restarts.
+- **Calibrated Headline Typography:** Feed titles bumped from `FontWeight=500` to `700`, giving headlines the same typographic presence as the StormTicker suite.
+
+## 🎨 Themes
+
+StormFeed ships with **3 visual modes**, switchable from the skin's right-click context menu:
+
+| Theme | Behavior |
+| :--- | :--- |
+| **Follow Windows (accent)** | *Default.* Reads your Windows accent color live and tints titles, bullets, links and highlights dynamically. |
+| **Wall Street Dark** | Fixed slate-dark palette with a sky-cyan accent (`56,189,248`) — the flagship Storm identity. |
+| **Dark Green** | Fixed deep forest-dark palette with an emerald/mint accent (`52,211,153`) — sleek and organic. |
+
+> Additional palettes — such as **Bloomberg Amber**, **Cyberpunk Neon**, **Stealth Monochrome**, and **Antivenom** — are exclusive to **[StormTicker Pro](https://www.deviantart.com/geovanesou/art/1381771713)**.
 
 ---
 
@@ -72,7 +92,7 @@ StormFeed includes **7 built-in layout modes**, toggled seamlessly by clicking t
 ## 📦 Installation
 
 ### Method 1: Automated Package (`.rmskin`) — Recommended
-1. Download the latest `StormFeed_1.0.3.rmskin` from the **[Releases](https://github.com/Geovanesou/StormFeed/releases)** page.
+1. Download the latest `StormFeed_1.1.0.rmskin` from the **[Releases](https://github.com/Geovanesou/StormFeed/releases)** page.
 2. Double-click the file to open the Rainmeter Skin Installer.
 3. Click **Install**. Rainmeter will automatically unpack and activate **StormFeed**.
 
@@ -94,6 +114,16 @@ You can configure up to 34 RSS/Atom feeds by editing `StormFeed.ini`:
 2. Scroll to the `[URL and FEED Data]` section.
 3. Update `URL#`, `CustomTitle#`, and `storysect#` for your preferred news sources.
 4. Save the file and right-click &rarr; **Refresh skin**.
+
+---
+
+## ⚡ The Storm Ecosystem — Complete Your Setup
+
+StormFeed is your **reader**: a magazine-style block you flip through — headlines, cyclical photo galleries, and full-text tooltips for deep reading.
+
+**[StormTicker Pro](https://www.deviantart.com/geovanesou/art/1381771713)** is your **wire**: a continuous horizontal news ticker that sits on your taskbar or screen edge, streaming breaking headlines in real time — 10 channels, the exclusive **Bloomberg Amber** and **Cyberpunk Neon** palettes, and the same Shared Storm visual identity.
+
+Run both together in the same theme and your desktop becomes the definitive news station: **browse in depth with StormFeed, monitor the wire with StormTicker Pro.**
 
 ---
 

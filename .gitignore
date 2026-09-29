@@ -6,3 +6,9 @@
 Thumbs.db
 Desktop.ini
 ChatGPT Image*.png
+*.psd
+stormfeed-showcase.jpeg
+
+# Exclude heavy assets content from git
+assets/*
+!assets/stormfeed-showcase.jpg
